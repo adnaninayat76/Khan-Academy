@@ -1,0 +1,461 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+/* button {
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 15px 0;
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 1px;
+  background: #603bbb;
+  cursor: pointer;
+} */
+.person-img {
+  width: 200px;
+  display: block;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+.login {
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 20px;
+  background: #e9e9e9;
+  display: flex;
+}
+
+.login .loginContainer {
+  padding: 60px;
+  margin: auto;
+  width: 100%;
+  max-width: 520px;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: radial-gradient(
+    ellipse at left bottom,
+    rgba(22, 24, 47, 1) 0%,
+    rgba(38, 20, 72, 0.9) 59%,
+    rgba(17, 27, 75, 0.9) 100%
+  );
+  box-shadow: 0 50px 70px -20px rgba(0, 0, 0, 0.8);
+}
+
+
+.login .loginContainer label {
+  color: white;
+  margin: 14px 0;
+  display: block;
+  font-size: 22px;
+  line-height: 1;
+}
+.datePicker{
+  color: #e9e9e9;
+}
+.login .loginContainer input {
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 19px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  letter-spacing: 1px;
+  height: 25px;
+}
+.loaders{
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  height: auto;
+  justify-content: space-around;
+}
+.line{
+  margin-top:30px ;
+display: flex;
+justify-content: space-around;
+
+align-items: center;
+color: white;
+
+}
+.lLine{
+  width: 45%;
+  height: 1px;
+background-color: #fff;
+}
+.rLine{
+  width: 45%;
+  height: 1px;
+  background-color: #fff;
+}
+.login .loginContainer .btnContainer {
+  width: 100%;
+  padding: 24px 0;
+}
+
+.login .loginContainer .btnContainer p {
+  margin: 14px 0 0 0;
+  text-align: right;
+  color: #fff;
+}
+
+.login .loginContainer .btnContainer p span {
+  color: yellow;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: all 400ms ease-in-out;
+}
+
+.login .loginContainer .btnContainer p span:hover {
+  color: red;
+}
+
+.login .loginContainer .errorMsg {
+  color: red;
+  font-size: 16px;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: radial-gradient(
+    ellipse at left bottom,
+    #102733 0%,
+    #102733 59%,
+    #102733 100%
+  );
+}
+/* ===============
+======HEADER=====
+================ */
+.headerLogout{
+  cursor: pointer;
+  color: red;
+}
+.mainNav{
+  display: flex;
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  text-transform: capitalize;
+  justify-content: space-evenly;
+  color: white;
+}
+.navli{
+  letter-spacing: 2px;
+  color: white;
+  cursor: pointer;
+}
+.MuiTextField-root{
+  background-color: #fff;
+  border-color: #b4345c;
+}
+.hero nav {
+  background: #29404E;
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  align-items: center;
+  height: 14vh;
+  justify-content: space-between;
+}
+
+.hero nav h2 {
+  color: #fff;
+}
+
+/* .hero nav button {
+  width: 86px;
+  padding: 8px 0;
+  background: #3a2b58;
+} */
+
+
+/* papaer */
+.icon1{
+  font-size: 1000px;
+  width: 40px;
+}
+
+/* =====================
+=========================
+EDITORIALS EDITING======
+=======================
+======================= */
+.editorialmain{
+  background-color: #dbf0f0;
+  display: flex;
+  flex-direction: column;
+}
+.edAddBtn{
+  position: fixed;
+  top: 200px;
+  left: 0px;
+
+}
+.editorialform{
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.editorialEdit{
+  width: 50%;
+  padding: 10px;
+height: 80vh;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+margin-top: 30px;
+}
+.edititle{
+  color: #e9e9e9;
+  font-size:30px;
+}
+
+.editorialdisplay{
+  width: 70%;
+  height: auto;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.edmaping{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 4px black;
+}
+
+
+
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+  /* dark shades of primary color*/
+  --clr-primary-1: hsl(205, 86%, 17%);
+  --clr-primary-2: hsl(205, 77%, 27%);
+  --clr-primary-3: hsl(205, 72%, 37%);
+  --clr-primary-4: hsl(205, 63%, 48%);
+  /* primary/main color */
+  --clr-primary-5: hsl(205, 78%, 60%);
+  /* lighter shades of primary color */
+  --clr-primary-6: hsl(205, 89%, 70%);
+  --clr-primary-7: hsl(205, 90%, 76%);
+  --clr-primary-8: hsl(205, 86%, 81%);
+  --clr-primary-9: hsl(205, 90%, 88%);
+  --clr-primary-10: hsl(205, 100%, 96%);
+  /* darkest grey - used for headings */
+  --clr-grey-1: hsl(209, 61%, 16%);
+  --clr-grey-2: hsl(211, 39%, 23%);
+  --clr-grey-3: hsl(209, 34%, 30%);
+  --clr-grey-4: hsl(209, 28%, 39%);
+  /* grey used for paragraphs */
+  --clr-grey-5: hsl(210, 22%, 49%);
+  --clr-grey-6: hsl(209, 23%, 60%);
+  --clr-grey-7: hsl(211, 27%, 70%);
+  --clr-grey-8: hsl(210, 31%, 80%);
+  --clr-grey-9: hsl(212, 33%, 89%);
+  --clr-grey-10: hsl(210, 36%, 96%);
+  --clr-white: #fff;
+  --clr-purple: #4b145b;
+  --clr-red-special: #b4345c;
+  --clr-grey-special: #eae6eb;
+  --clr-red-dark: hsl(360, 67%, 44%);
+  --clr-red-light: hsl(360, 71%, 66%);
+  --clr-green-dark: hsl(125, 67%, 44%);
+  --clr-green-light: hsl(125, 71%, 66%);
+  --clr-black: #222;
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  --max-width: 1170px;
+  --fixed-width: 920px;
+}
+/*
+=============== 
+Global Styles
+===============
+*/
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  background: var(--clr-purple);
+  color: var(--clr-grey-1);
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+ul {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: var(--spacing);
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 0.875rem;
+}
+p {
+  margin-bottom: 1.25rem;
+  color: var(--clr-grey-5);
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/*  global classes */
+
+/* section */
+.section {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: var(--max-width);
+}
+
+@media screen and (min-width: 992px) {
+  .section {
+    width: 95vw;
+  }
+}
+
+/*
+=============== 
+Questions
+===============
+*/
+
+main {
+  min-height: 100vh;
+  /* using flex because of better browser support */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 90vw;
+  margin: 5rem auto;
+  background: var(--clr-white);
+  border-radius: var(--radius);
+  padding: 2.5rem 2rem;
+  max-width: var(--fixed-width);
+  display: grid;
+  gap: 1rem 2rem;
+}
+.container h3 {
+  line-height: 1.2;
+  font-weight: 500;
+}
+@media screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+  }
+}
+.question {
+  padding: 1rem 1.5rem;
+  border: 2px solid var(--clr-grey-special);
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--light-shadow);
+}
+.question h4 {
+  text-transform: none;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.question p {
+  color: var(--clr-grey-3);
+  margin-bottom: 0;
+  margin-top: 0.5rem;
+}
+.question header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.question header h4 {
+  margin-bottom: 0;
+}
+.mybtn {
+  background: transparent;
+  border-color: transparent;
+  width: 2rem;
+  height: 2rem;
+  background: var(--clr-grey-special);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--clr-red-special);
+  cursor: pointer;
+  margin-left: 1rem;
+  align-self: center;
+  min-width: 2rem;
+}
+/* ==============SideBar===================== */
