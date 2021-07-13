@@ -32,8 +32,8 @@ const useStyles = makeStyles((theme) => ({
   }));
 function EditorialFetchData({id,date,description,title}) {
   const [open, setOpen] = useState(false);
-  const [input1, setInput1] = useState();
-  const [input2, setInput2] = useState();
+  const [input1, setInput1] = useState(title);
+  const [input2, setInput2] = useState(description);
   const [selectedDate, setSelectedDate] = useState(
     new Date(cdatee)
   );
@@ -52,7 +52,7 @@ function EditorialFetchData({id,date,description,title}) {
   const updateTodo = () => {
     db.collection("editorials")
       .doc(id)
-      .set({ title: input1, description: input2,date:selectedDate }, { merge: true });
+      .set({ title: input1, description: input2,date:selectedDate.toDateString() }, { merge: true });
     setOpen(false);
   };
   const classes = useStyles();

@@ -2,6 +2,8 @@ import React from "react";
 import { Button } from "@material-ui/core";
 function LogIn(props) {
   const {
+    user,
+    setUser,
     password,
     setpassword,
     email,
@@ -12,12 +14,17 @@ function LogIn(props) {
     sethash,
     emailerror,
     passworderror,
+    list,
   } = props;
   return (
     <section className="login">
       <div className="loginContainer">
         <div className="border">
-          {" "}
+        {/* {list.map((li)=>{
+            return(
+              <h2>{li.email}</h2>
+            )
+          })} */}
           <label>Email</label>
           <input
           style={{height:"40px",color:"white", border:"1px solid blue"}}
@@ -42,27 +49,25 @@ function LogIn(props) {
           />
           <p className="errorMsg">{passworderror}</p>
           <div className="btnContainer">
+          <span onClick={() => sethash(!hash)}>Sign In</span>
+          <Button variant="contained" color="primary" onClick={handleLogin}>Sign In </Button>
             {hash ? (
               <>
-                <Button variant="contained" color="primary" onClick={handleLogin}>Sign In </Button>
-                <div className="line">
-                  <div className="lLine"></div>
-                  <div className="text">or</div>
-                  <div className="rLine"></div>
-                </div>
-                <p>
+               
+               
+                {/* <p>
                   Don't have an acount
                   <span onClick={() => sethash(!hash)}>Sign up</span>
-                </p>
+                </p> */}
               </>
             ) : (
               <>
-                <Button variant="contained" color="primary" onClick={handleSignup}>Sign Up</Button>
-                <div className="line">
+                {/* <Button variant="contained" color="primary" onClick={handleSignup}>Sign Up</Button> */}
+                {/* <div className="line">
                   <div className="lLine"></div>
-                  <div className="text">or</div>
+                  <div className="text">--</div>
                   <div className="rLine"></div>
-                </div>
+                </div> */}
                 <p>
                   Have an acount{" "}
                   <span onClick={() => sethash(!hash)}>Sign In</span>
