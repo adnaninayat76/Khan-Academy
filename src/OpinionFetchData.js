@@ -34,8 +34,8 @@ const useStyles = makeStyles((theme) => ({
 function OpinionFetchData({id,date,description,title}) {
  
     const [open, setOpen] = useState(false);
-    const [input1, setInput1] = useState();
-    const [input2, setInput2] = useState();
+    const [input1, setInput1] = useState(title);
+    const [input2, setInput2] = useState(description);
     const [selectedDate, setSelectedDate] = useState(
       new Date(cdatee)
     );
@@ -114,7 +114,7 @@ function OpinionFetchData({id,date,description,title}) {
               label="Write Your Description Here"
               multiline
               rows={4}
-              defaultValue="Default Value"
+              
               variant="outlined"
               className={classes.firstinput}
               value={input2}
