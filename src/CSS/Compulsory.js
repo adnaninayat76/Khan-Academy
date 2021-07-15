@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     "& > *": {
       margin: theme.spacing(2),
       width: theme.spacing(35),
-      height: theme.spacing(20),
+      height: theme.spacing(32),
     },
   },
 }));
@@ -36,12 +36,12 @@ function Compulsory() {
         {/* Paper 1 */}
         <Paper elevation={3} style={{marginBottom:"6vh"}}>
           <Link to="/essay">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%" }}>
               <CardContent>
               <img
                     src="essay.png"
                     alt="aa"
-                    style={{ width: "80px", marginLeft: "5vw" }}
+                    style={{ width: "80px", marginLeft: "4vw" }}
                   />
                 <h3 style={{color:"white",marginTop:"4vh",marginLeft:"3vw"}}>
                    
@@ -55,17 +55,17 @@ function Compulsory() {
         {/* Paper 2 */}
         <Paper elevation={3}>
           <Link to="/precis">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="precis.png"
                     alt="aa"
-                    style={{ width: "100px", marginLeft: "5vw" }}
+                    style={{ width: "100px", marginLeft: "4vw" }}
                   />
-                <h4 style={{color:"white",marginTop:"4vh",marginLeft:"2vw"}}>
+                <h3 style={{color:"white",marginTop:"4vh",marginLeft:"2vw"}}>
                    
                   Precis & Composition
-                </h4>
+                </h3>
               </CardContent>
             </CardActionArea>
           </Link>
@@ -74,12 +74,12 @@ function Compulsory() {
         {/* Paper 3 */}
         <Paper elevation={3}>
           <Link to="/pakaffairs">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="pakAffair.png"
                     alt="aa"
-                    style={{ width: "100px", marginLeft: "4.3vw" }}
+                    style={{ width: "100px", marginLeft: "4vw" }}
                   />
                 <h3 style={{color:"white",marginTop:"4vh",marginLeft:"2vw"}}>
                    
@@ -93,12 +93,12 @@ function Compulsory() {
         {/* Paper 4 */}
         <Paper elevation={3}>
           <Link to="/currentaffairs">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="current.png"
                     alt="aa"
-                    style={{ width: "100px", marginLeft: "5vw" }}
+                    style={{ width: "100px", marginLeft: "4vw" }}
                   />
                 <h3 style={{color:"white",marginTop:"4vh",marginLeft:"2vw"}}>
                    
@@ -111,12 +111,12 @@ function Compulsory() {
         </Paper>
         <Paper elevation={3}>
           <Link to="/gsa">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="gsa.png"
                     alt="aa"
-                    style={{ width: "90px", marginLeft: "5vw" }}
+                    style={{ width: "90px", marginLeft: "4vw" }}
                   />
                 <h3 style={{color:"white",marginTop:"4vh",marginLeft:"4vw"}}>
                    
@@ -129,12 +129,12 @@ function Compulsory() {
         </Paper>
         <Paper elevation={3}>
           <Link to="/islamiat">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="islamiat.png"
                     alt="aa"
-                    style={{ width: "90px", marginLeft: "5vw" }}
+                    style={{ width: "90px", marginLeft: "4vw" }}
                   />
                 <h3 style={{color:"white",marginTop:"4vh",marginLeft:"3vw"}}>
                    

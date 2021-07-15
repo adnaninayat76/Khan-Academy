@@ -22,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     "& > *": {
       margin: theme.spacing(2),
       width: theme.spacing(35),
-      height: theme.spacing(20),
+      height: theme.spacing(32),
     },
   },
 }));
@@ -36,12 +36,12 @@ function CSS() {
         {/* Paper 1 */}
         <Paper elevation={3} style={{marginBottom:"6vh"}}>
           <Link to="/genderstudies">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E" ,height:"100%" }}>
               <CardContent>
               <img
                     src="gender.png"
                     alt="aa"
-                    style={{ width: "70px", marginLeft: "5vw" }}
+                    style={{ width: "70px", marginLeft: "4vw" }}
                   />
                 <h3 style={{color:"white",marginTop:"4vh",marginLeft:"1vw"}}>
                    
@@ -55,17 +55,17 @@ function CSS() {
         {/* Paper 2 */}
         <Paper elevation={3}>
           <Link to="/politicalscience1">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
-                    src="Political1.png"
+                    src="https://firebasestorage.googleapis.com/v0/b/my-project-1558089197964.appspot.com/o/AdminPanelImages%2Fpolitical1.png?alt=media&token=1296c213-0127-4d4f-9d43-b03d4d270062"
                     alt="aa"
-                    style={{ width: "90px", marginLeft: "5vw" }}
+                    style={{ width: "90px", marginLeft: "4vw" }}
                   />
-                <h4 style={{color:"white",marginTop:"6vh",marginLeft:"3vw"}}>
+                <h3 style={{color:"white",marginTop:"6vh",marginLeft:"3vw"}}>
                    
                   Political Science I
-                </h4>
+                </h3>
               </CardContent>
             </CardActionArea>
           </Link>
@@ -74,17 +74,17 @@ function CSS() {
         {/* Paper 3 */}
         <Paper elevation={3}>
           <Link to="/politicalscience2">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="political2.png"
                     alt="aa"
-                    style={{ width: "130px", marginLeft: "5vw" }}
+                    style={{ width: "130px", marginLeft: "4vw" }}
                   />
-                <h4 style={{color:"white",marginTop:"6vh",marginLeft:"2vw"}}>
+                <h3 style={{color:"white",marginTop:"6vh",marginLeft:"2vw"}}>
                    
                 Political Science II
-                </h4>
+                </h3>
               </CardContent>
             </CardActionArea>
           </Link>
@@ -93,17 +93,17 @@ function CSS() {
         {/* Paper 4 */}
         <Paper elevation={3}>
           <Link to="/public">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="public.png"
                     alt="aa"
-                    style={{ width: "110px", marginLeft: "5vw" }}
+                    style={{ width: "110px", marginLeft: "4vw" }}
                   />
-                <h4 style={{color:"white",marginTop:"4vh",marginLeft:"2vw"}}>
+                <h3 style={{color:"white",marginTop:"4vh",marginLeft:"2vw"}}>
                    
                   Public Administration
-                </h4>
+                </h3>
               </CardContent>
             </CardActionArea>
           </Link>
@@ -111,12 +111,12 @@ function CSS() {
         </Paper>
         <Paper elevation={3}>
           <Link to="/history">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="history.png"
                     alt="aa"
-                    style={{ width: "100px", marginLeft: "5vw" }}
+                    style={{ width: "100px", marginLeft: "4vw" }}
                   />
                 <h3 style={{color:"white",marginTop:"4vh",marginLeft:"2vw"}}>
                    
@@ -129,14 +129,14 @@ function CSS() {
         </Paper>
         <Paper elevation={3}>
           <Link to="/punjabi">
-            <CardActionArea style={{ backgroundColor: "#29404E" }}>
+            <CardActionArea style={{ backgroundColor: "#29404E",height:"100%"  }}>
               <CardContent>
               <img
                     src="punjabi.png"
                     alt="aa"
-                    style={{ width: "100px", marginLeft: "4.3vw" }}
+                    style={{ width: "100px", marginLeft: "4vw" }}
                   />
-                <h3 style={{color:"white",marginTop:"4vh",marginLeft:"4vw"}}>
+                <h3 style={{color:"white",marginTop:"4vh",marginLeft:"3vw"}}>
                    
                   Punjabi
                 </h3>
