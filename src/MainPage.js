@@ -32,7 +32,7 @@ function MainPage() {
   const classes = useStyles();
   return (
     <div>
-      <div className={classes.root}>
+      <div className={classes.root} style={{display:"flex",justifyContent:"center"}}>
         {/* Paper 1 */}
         <Paper elevation={3}>
           <Link to="/editorial">
