@@ -56,8 +56,8 @@ const useStyles = makeStyles({
   },
 });
 var someDate = new Date();
-var numberOfDaysToAdd = 3;
-var cdatee = someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+// var numberOfDaysToAdd = 3;
+var cdatee = someDate.setDate(someDate.getDate()); 
 function Editorial() {
   const [list, setList] = useState([]);
   const [inputdata, setinputData] = useState("");
@@ -73,11 +73,28 @@ function Editorial() {
   const [state, setState] = React.useState({
     left: false,
   });
+  const refreshPage = ()=>{
+    setTimeout(()=>{
+      window.location.reload();
+    },1000)
+   
+ }
   const clas = useStyle();
   const handleOpen = () => {
     setOpen(true);
   };
+  const toggleDrawer = (anchor, open) => (event) => {
+    if (
+      event &&
+      event.type === "keydown" &&
+      (event.key === "Tab" || event.key === "Shift")
+    ) {
+      return;
+    }
 
+    setState({ ...state, [anchor]: open });
+   
+  };
   const handleClose = () => {
     setOpen(false);
   };
@@ -125,9 +142,12 @@ function Editorial() {
               setfileFile("");
               setimageFile("");
               handleClose();
+              refreshPage();
+              // window.location.reload();
             });
           });
         });
+        
       });
     } else {
       console.log("Enter");
@@ -137,18 +157,7 @@ function Editorial() {
     e.preventDefault();
     setimageFile(e.target.files[0]);
   }
-  const toggleDrawer = (anchor, open) => (event) => {
-    if (
-      event &&
-      event.type === "keydown" &&
-      (event.key === "Tab" || event.key === "Shift")
-    ) {
-      return;
-    }
 
-    setState({ ...state, [anchor]: open });
-   
-  };
   const mlist = (anchor) => (
     <div
       className={clsx(classes.list, {

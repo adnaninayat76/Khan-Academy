@@ -57,8 +57,8 @@ const useStyles = makeStyles({
   },
 });
 var someDate = new Date();
-var numberOfDaysToAdd = 3;
-var cdatee = someDate.setDate(someDate.getDate() + numberOfDaysToAdd);
+// var numberOfDaysToAdd = 3;
+var cdatee = someDate.setDate(someDate.getDate()); 
 
 function Opinion() {
   
@@ -77,6 +77,12 @@ function Opinion() {
   const [state, setState] = React.useState({
     left: false,
   });
+  const refreshPage = ()=>{
+    setTimeout(()=>{
+      window.location.reload();
+    },1000)
+   
+ }
   const clas = useStyle();
   const handleOpen = () => {
     setOpen(true);
@@ -123,12 +129,14 @@ function Opinion() {
                   image: imageurl,
                   title: inputdata,
                 },
-              ]);
+                ]);
               setDesc("");
               setinputData("");
               setfileFile("");
               setimageFile("");
               handleClose();
+              refreshPage();
+              // window.location.reload();
             });
           });
         });

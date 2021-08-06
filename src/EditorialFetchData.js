@@ -15,8 +15,8 @@ import {
   KeyboardDatePicker,
 } from "@material-ui/pickers";
 var someDate = new Date();
-var numberOfDaysToAdd = 3;
-var cdatee = someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+// var numberOfDaysToAdd = 3;
+var cdatee = someDate.setDate(someDate.getDate()); 
 const useStyles = makeStyles((theme) => ({
     modal: {
       display: "flex",

@@ -57,8 +57,8 @@ const useStyles = makeStyles({
   },
 });
 var someDate = new Date();
-var numberOfDaysToAdd = 3;
-var cdatee = someDate.setDate(someDate.getDate() + numberOfDaysToAdd); 
+// var numberOfDaysToAdd = 3;
+var cdatee = someDate.setDate(someDate.getDate());  
 function CurrentAffairs() {
   const [list, setList] = useState([]);
   const [inputdata, setinputData] = useState("");
@@ -78,7 +78,12 @@ function CurrentAffairs() {
   const handleOpen = () => {
     setOpen(true);
   };
-
+  const refreshPage = ()=>{
+    setTimeout(()=>{
+      window.location.reload();
+    },1000)
+   
+ }
   const handleClose = () => {
     setOpen(false);
   };
@@ -120,12 +125,14 @@ function CurrentAffairs() {
                   image: imageurl,
                   title: inputdata,
                 },
-              ]);
+                ]);
               setDesc("");
               setinputData("");
               setfileFile("");
               setimageFile("");
               handleClose();
+              refreshPage();
+              // window.location.reload();
             });
           });
         });

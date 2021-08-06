@@ -47,7 +47,7 @@ function LogIn(props) {
             onChange={(e) => setpassword(e.target.value)}
             placeholder="Enter Your Password"
           />
-          <p className="errorMsg">{passworderror}</p>
+         {passworderror && <p className="errorMsg">Email Or Password is Incorrect</p>} 
           <div className="btnContainer">
           <span onClick={() => sethash(!hash)}>Sign In</span>
           <Button variant="contained" color="primary" onClick={handleLogin}>Sign In </Button>
@@ -70,7 +70,7 @@ function LogIn(props) {
                 </div> */}
                 <p>
                   Have an acount{" "}
-                  <span onClick={() => sethash(!hash)}>Sign In</span>
+                  <span >Sign In</span>
                 </p>
               </>
             )}
